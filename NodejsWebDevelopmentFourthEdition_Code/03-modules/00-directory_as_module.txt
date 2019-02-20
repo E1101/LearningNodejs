@@ -1,0 +1,12 @@
+In most cases, a directory-as-module contains a package.json file. This file contains data about
+the module (known as package) that Node.js uses while loading the module.
+
+The Node.js runtime recognizes these two fields:
+{ name: "myAwesomeLibrary",
+main: "./lib/awesome.js" }
+
+If this package.json file is in a directory named awesomelib, then require('./awesomelib') will
+load the file module in ./awesomelib/lib/awesome.js.
+
+If there is no package.json, then Node.js will look for either index.js or index.node. In such a
+case, require('./awesomelib') will load the file module in ./awesomelib/index.js.

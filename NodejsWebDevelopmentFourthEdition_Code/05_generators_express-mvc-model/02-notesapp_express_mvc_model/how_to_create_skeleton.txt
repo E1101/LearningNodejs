@@ -1,0 +1,7 @@
+$ npm install express-generator@4.x
+$ ./node_modules/.bin/express --view=hbs --git .
+
+$ npm uninstall express-generator
+$ npm install
+$ DEBUG=notes:* npm start
+

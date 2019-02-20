@@ -1,0 +1,8 @@
+{
+  "name": "differentiating_http_verbs",
+  "version": "1.0.0",
+  "description": "Differentiating the incoming requests based on their type, by implementing handler functions for each type of request.",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}

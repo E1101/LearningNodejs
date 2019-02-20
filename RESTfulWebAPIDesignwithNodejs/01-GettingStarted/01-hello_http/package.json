@@ -1,0 +1,8 @@
+{
+  "name": "hello-http",
+  "version": "1.0.0",
+  "description": "Simple hello world http handler",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}

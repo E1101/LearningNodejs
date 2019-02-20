@@ -1,0 +1,11 @@
+{
+  "name": "working_with_mock_objects",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "./node_modules/.bin/nodeunit test/test-http-module.js"
+  },
+  "dependencies": {
+    "nodeunit": "^0.11.3",
+    "sinon": "^7.1.1"
+  }
+}

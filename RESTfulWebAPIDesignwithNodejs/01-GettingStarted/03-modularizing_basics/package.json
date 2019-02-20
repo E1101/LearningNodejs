@@ -1,0 +1,8 @@
+{
+  "name": "0modularizing_basics",
+  "version": "1.0.0",
+  "description": "Entire request handling functionality will be wrapped in a module.",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}

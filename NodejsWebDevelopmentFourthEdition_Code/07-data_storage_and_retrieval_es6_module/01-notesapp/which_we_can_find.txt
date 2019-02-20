@@ -1,0 +1,12 @@
+> Logging
+  Request logging with Morgan
+> Debugging messages
+> Uncaught exceptions
+> Rewriting codes as ES6 modules
+> Storing notes in the filesystem
+> Dynamic import of ES6 modules
+> Storing notes with the LevelUP data store
+> Storing notes in SQL with SQLite3
+> Storing notes the ORM way with Sequelize
+  YAML-formatted file to store the Sequelize connection configuration
+> Storing notes in native MongoDB driver

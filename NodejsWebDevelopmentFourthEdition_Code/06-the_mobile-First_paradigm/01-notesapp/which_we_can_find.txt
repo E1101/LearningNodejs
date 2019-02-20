@@ -1,0 +1,13 @@
+> Using Twitter Bootstrap on the Notes application
+> Adding Bootstrap to application templates
+> Responsive page structure for the Notes application
+> Using icon libraries and improving visual appeal use Feather Icons
+> Responsive page header navigation bar
+> Improving the Notes list on the front page
+> Cleaning up the Note viewing experience
+> Cleaning up the delete-note window
+> Building a customized Bootstrap
+
+
+! Flexbox and CSS Grids
+! Laying the Bootstrap grid foundation

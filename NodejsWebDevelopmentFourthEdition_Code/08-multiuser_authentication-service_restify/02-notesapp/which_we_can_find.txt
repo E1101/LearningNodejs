@@ -1,0 +1,9 @@
+> Login support for the Notes application
+> Accessing the user authentication REST API
+> Login and logout routing functions
+> Login/logout changes to app.js
+> Login/logout changes in routes/index.mjs
+> Login/logout changes required in routes/notes.mjs
+> View template changes supporting login/logout
+> Twitter login support for the Notes application
+> Implementing TwitterStrategy

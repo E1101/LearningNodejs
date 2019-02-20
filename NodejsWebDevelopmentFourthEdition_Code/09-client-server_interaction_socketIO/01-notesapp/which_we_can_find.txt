@@ -1,0 +1,15 @@
+> Initializing Socket.IO with Express
+> Real-time updates on the Notes homepage
+> The Notes model as an EventEmitter class
+> Real-time changes in the Notes home page
+> Changing the homepage and layout templates
+> Running Notes with real-time homepage updates
+> Real-time action while viewing notes
+> Changing the note view template for real-time action
+> Running Notes with real-time updates while viewing a note
+> Inter-user chat and commenting for Notes
+> Data model for storing messages
+> Adding messages to the Notes router
+> Changing the note view template for messages
+  Using a Modal window to compose messages
+> Sending, displaying, and deleting messages

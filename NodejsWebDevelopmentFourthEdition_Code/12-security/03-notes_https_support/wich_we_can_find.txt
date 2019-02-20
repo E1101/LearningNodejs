@@ -1,0 +1,12 @@
+> Put on your Helmet for across-the-board security
+> Using Helmet to set the Content-Security-Policy header
+> Using Helmet to set the X-DNS-Prefetch-Control header
+> Using Helmet to set the X-Frame-Options header
+> Using Helmet to remove the X-Powered-By header
+> Improving HTTPS with Strict Transport Security
+> Mitigating XSS attacks with Helmet
+> Addressing Cross-Site Request Forgery (CSRF) attacks
+> Denying SQL injection attacks
+> Sequelize deprecation warning regarding operator injection attack
+> Scanning for known vulnerabilities
+> Using good cookie practices

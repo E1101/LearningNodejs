@@ -1,0 +1,9 @@
+> Express and the MVC paradigm
+> Your first Notes model
+> Understanding ES-2015 class definitions
+> Filling out the in-memory Notes model
+> The Notes home page (setup view)
+> Adding a new note – create
+> Deleting notes – destroy
+> Theming your Express application
+> Scaling up – running multiple Notes instances (package.json scripts)
