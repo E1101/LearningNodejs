@@ -10,3 +10,5 @@ services:
     volumes:
       - ./:/home/node/app
     command: "node task.js"
+
+## docker-compose run node node task.js
