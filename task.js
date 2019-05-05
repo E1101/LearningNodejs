@@ -31,3 +31,8 @@ function sum()
 // testing
 console.log( add(10, 6) );    // 16
 console.log( sum(10, 4.5, 6) );     // 20.5
+
+
+/*
+#function #function arguments #Array #sprintf #throw #Error
+*/
