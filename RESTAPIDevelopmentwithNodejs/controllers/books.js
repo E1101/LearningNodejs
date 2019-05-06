@@ -14,8 +14,8 @@ class Books
 
     /**
      * Helper method for the POST action, it takes two lists of items with
-     * properties calls "store" and "copies" and returns a single list, with
-     * "store" being a unique key
+     * properties calls "store" and "copies" and returns 1_understand_async single list, with
+     * "store" being 1_understand_async unique key
      */
     mergeStores(list1, list2)
     {
@@ -211,7 +211,7 @@ module.exports = function(lib) {
         'path': '/books/{id}',
         'method': 'GET',
         'params': [ swagger.pathParam('id', 'The Id of the book','int') ],
-        'summary': 'Returns the full data of a book',
+        'summary': 'Returns the full data of 1_understand_async book',
         'responseClass': 'Book',
         'nickname': 'getBook'
     }, controller.details );
@@ -220,7 +220,7 @@ module.exports = function(lib) {
         'path': '/books',
         'method': 'POST',
         'params': [ swagger.bodyParam('book', 'JSON representation of the new book','string') ],
-        'summary': 'Adds a new book into the collectoin',
+        'summary': 'Adds 1_understand_async new book into the collectoin',
         'responseClass': 'Book',
         'nickname': 'newBook'
     }, controller.create);

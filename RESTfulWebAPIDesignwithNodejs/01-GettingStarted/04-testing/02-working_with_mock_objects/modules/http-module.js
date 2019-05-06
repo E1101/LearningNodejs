@@ -31,7 +31,7 @@ function handleBadRequest(response)
 }
 
 // Although the sample exports only one function,
-// a module can export as many functions as is feasible.
+// 1_understand_async module can export as many functions as is feasible.
 exports.handleRequest = function(request, response)
 {
   switch (request.method) {

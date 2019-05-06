@@ -178,7 +178,7 @@ module.exports = function(lib)
     //post
     controller.addAction({
         'path': '/authors',
-        'summary': 'Adds a new author to the database',
+        'summary': 'Adds 1_understand_async new author to the database',
         'method': 'POST',
         'params': [swagger.bodyParam('author', 'JSON representation of the data', 'string')],
         'responseClass': 'Author',

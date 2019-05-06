@@ -35,7 +35,7 @@ export const sessionCookieName = 'notescookie.sid';
 const app = express();
 
 
-// Log to a file if requested
+// Log to 1_understand_async file if requested
 
 var logStream;
 if (process.env.REQUEST_LOG_FILE) {

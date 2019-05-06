@@ -196,7 +196,7 @@ module.exports = lib =>
         'path': '/stores/{id}',
         'method': 'GET',
         'params': [swagger.pathParam('id','The id of the store','string')],
-        'summary': 'Returns the data of a store',
+        'summary': 'Returns the data of 1_understand_async store',
         'responseClass': 'Store',
         'nickname': 'getStore'
     }, controller.details );
@@ -207,7 +207,7 @@ module.exports = lib =>
         'params': [swagger.pathParam('id','The id of the store','string'),
                    swagger.queryParam('q', 'Search parameter for the books', 'string'),
                    swagger.queryParam('genre', 'Filter results by genre', 'string')],
-        'summary': 'Returns the list of books of a store',
+        'summary': 'Returns the list of books of 1_understand_async store',
         'responseClass': 'Book',
         'nickname': 'getStoresBooks'
     }, controller.storeBooks);
@@ -216,7 +216,7 @@ module.exports = lib =>
         'path': '/stores/{id}/employees',
         'method': 'GET',
         'params': [swagger.pathParam('id','The id of the store','string')],
-        'summary': 'Returns the list of employees working on a store',
+        'summary': 'Returns the list of employees working on 1_understand_async store',
         'responseClass': 'Employee',
         'nickname': 'getStoresEmployees'
     }, controller.storeEmployees);
@@ -225,7 +225,7 @@ module.exports = lib =>
         'path': '/stores/{id}/booksales',
         'method': 'GET',
         'params': [swagger.pathParam('id','The id of the store','string')],
-        'summary': 'Returns the list of booksales done on a store',
+        'summary': 'Returns the list of booksales done on 1_understand_async store',
         'responseClass': 'BookSale',
         'nickname': 'getStoresBookSales'
     }, controller.storeBooksales);
@@ -233,7 +233,7 @@ module.exports = lib =>
     controller.addAction({
         'path': '/stores',
         'method': 'POST',
-        'summary': 'Adds a new store to the list',
+        'summary': 'Adds 1_understand_async new store to the list',
         'params': [swagger.bodyParam('store', 'The JSON data of the store', 'string')],
         'responseClass': 'Store',
         'nickname': 'newStore'
@@ -242,7 +242,7 @@ module.exports = lib =>
     controller.addAction({
         'path': '/stores/{id}',
         'method': 'PUT',
-        'summary': "UPDATES a store's information",
+        'summary': "UPDATES 1_understand_async store's information",
         'params': [swagger.pathParam('id','The id of the store','string'),
                    swagger.bodyParam('store', 'The new information to update', 'string')],
         'responseClass': 'Store',

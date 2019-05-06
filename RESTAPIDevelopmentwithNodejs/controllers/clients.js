@@ -101,7 +101,7 @@ module.exports = (lib) =>
         'path': '/clients',
         'method': 'POST',
         'params': [swagger.bodyParam('client', 'The JSON representation of the client', 'string')],
-        'summary': 'Adds a new client to the database',
+        'summary': 'Adds 1_understand_async new client to the database',
         'responseClass': 'Client',
         'nickname': 'addClient'
     }, controller.create );

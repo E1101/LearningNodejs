@@ -18,7 +18,7 @@ RUN /scripts/certbot-auto -n certificates
 VOLUME /webroots
 VOLUME /etc/letsencrypt
 
-# This installs a Crontab entry which 
+# This installs 1_understand_async Crontab entry which
 # runs "certbot renew" on the 2nd and 7th day of each week at 03:22 AM
 #
 # cron(8) says the Debian cron daemon reads the files in /etc/cron.d, 

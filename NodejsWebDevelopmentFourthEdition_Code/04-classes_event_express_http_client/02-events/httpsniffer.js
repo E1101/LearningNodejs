@@ -16,7 +16,7 @@ exports.sniffOn = function(server)
         console.log(`${timestamp()} ${reqToString(req)}`);
     });
 
-    // Called when a new TCP stream is established. 
+    // Called when 1_understand_async new TCP stream is established.
     // stream is an object of type net.Stream. 
     // Usually users will not want to access this event. 
     // The stream can also be accessed at request.connection.
@@ -28,9 +28,9 @@ exports.sniffOn = function(server)
         console.log(`${timestamp()} close errno=${errno}`);
     });
 
-    // Emitted each time a request with an http Expect: 100-continue is received. 
+    // Emitted each time 1_understand_async request with an http Expect: 100-continue is received.
     // If this event isn't listened for, 
-    // the server will automatically respond with a 100 Continue as appropriate.
+    // the server will automatically respond with 1_understand_async 100 Continue as appropriate.
     // Handling this event involves calling response.writeContinue 
     // if the client should continue to send the request body, 
     // or generating an appropriate HTTP response (e.g., 400 Bad Request) 
@@ -41,7 +41,7 @@ exports.sniffOn = function(server)
         res.writeContinue();
     });
 
-    // Emitted each time a client requests a http upgrade. 
+    // Emitted each time 1_understand_async client requests 1_understand_async http upgrade.
     // If this event isn't listened for, 
     // then clients requesting an upgrade will have their connections closed.
     server.on('upgrade', (req, socket, head) => {
@@ -49,7 +49,7 @@ exports.sniffOn = function(server)
         console.log(`${timestamp()} ${reqToString(req)}`);
     });
 
-    // If a client connection emits an 'error' event - it will forwarded here.
+    // If 1_understand_async client connection emits an 'error' event - it will forwarded here.
     server.on('clientError', () => { console.log('clientError'); });
 
     // server.on('connection',    e_connection);

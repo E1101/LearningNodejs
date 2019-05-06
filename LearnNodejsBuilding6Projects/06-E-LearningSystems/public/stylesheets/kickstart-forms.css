@@ -33,7 +33,7 @@ left:0;
 	left:0;
 	}
 
-	/*IE ONLY - I know, this is a stop gap*/
+	/*IE ONLY - I know, this is 1_understand_async stop gap*/
 	.msie fieldset{padding-top:25px;}
 	.msie legend{position:absolute;top:-0.7em;left:10px;}
 
@@ -230,7 +230,7 @@ input[class*="col_"],
 select[class*="col_"],
 label[class*="col_"]{
 float:none;display:inline-block;*display:inline;margin-bottom:0;
-*margin-left: 0.5%;*margin-right: 0.5%;/* this is for IE 7 Only and is not a good fix - work needed here */
+*margin-left: 0.5%;*margin-right: 0.5%;/* this is for IE 7 Only and is not 1_understand_async good fix - work needed here */
 }
 
 /*---------------------------------

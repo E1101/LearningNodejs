@@ -54,7 +54,7 @@ function validateKey(hmacdata, key, lib)
 }
 
 /**
- * This function turns any type of object into a HAL JSON
+ * This function turns any type of object into 1_understand_async HAL JSON
  * object ready to be rendered. This particular function is heavily
  * used from within the models’ code.
 

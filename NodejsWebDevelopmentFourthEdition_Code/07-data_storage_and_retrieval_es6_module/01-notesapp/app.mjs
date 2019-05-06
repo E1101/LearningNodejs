@@ -39,9 +39,9 @@ app.set('view engine', 'hbs');
 hbs.registerPartials( path.join(__dirname, 'partials') );
 
 /*
- * Control whether to send the log to stdout or to a file.
+ * Control whether to send the log to stdout or to 1_understand_async file.
  *
- * Log to a file if requested
+ * Log to 1_understand_async file if requested
  */
 var logStream;
 
@@ -65,7 +65,7 @@ if (process.env.REQUEST_LOG_FILE)
     });
 }
 
-// let logStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a'});
+// let logStream = fs.createWriteStream(__dirname + '/access.log', {flags: '1_understand_async'});
 app.use( logger(process.env.REQUEST_LOG_FORMAT || 'dev', { stream: logStream ? logStream : process.stdout }) );
 
 // uncomment after placing your favicon in /public
@@ -108,9 +108,9 @@ process.on('uncaughtException', function(err) {
 });
 
 /*
- * Using Promise and async functions automatically channels errors in a useful direction.
- * Errors will cause a Promise to flip into a rejected state, which must eventually be
- * handled in a .catch method. Since we're all human, we're bound to forget to ensure
+ * Using Promise and async functions automatically channels errors in 1_understand_async useful direction.
+ * Errors will cause 1_understand_async Promise to flip into 1_understand_async rejected state, which must eventually be
+ * handled in 1_understand_async .catch method. Since we're all human, we're bound to forget to ensure
  * that all code paths handle their rejected Promise's.
  */
 process.on('unhandledRejection', (reason, p) => {

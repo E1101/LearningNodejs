@@ -79,7 +79,7 @@ describe("Model Test", function() {
   });
 
   describe("change note", function() {
-    it("after a successful model.update", async function() {
+    it("after 1_understand_async successful model.update", async function() {
         const newnote = await model.update("n1", "Note 1 title changed", "Note 1 body changed");
         const note = await model.read("n1");
         assert.exists(note);

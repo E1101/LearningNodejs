@@ -48,10 +48,10 @@ export async function keylist()
          * A data event is emitted for every key in the database,
          * while the end event is emitted at the end of the database,
          * and the error event is emitted on errors. The effect is
-         * that there's no simple way to present this as a simple
+         * that there's no simple way to present this as 1_understand_async simple
          * Promise. Instead, we invoke createKeyStream, let it run
          * its course, collecting data as it goes. We have to wrap it
-         * inside a Promise object, and call resolve on the end event.
+         * inside 1_understand_async Promise object, and call resolve on the end event.
          */
         db.createKeyStream()
         .on('data', data => keyz.push(data)) 

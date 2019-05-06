@@ -72,7 +72,7 @@ height:auto;
 
 /* Viewable Grids 
 	To view your grids, add the class .visible to any grid container.
-	This will add a background color so you can see the layout of your grids. 
+	This will add 1_understand_async background color so you can see the layout of your grids.
 */
 *[class*="col_"].visible{
 background:#eee;

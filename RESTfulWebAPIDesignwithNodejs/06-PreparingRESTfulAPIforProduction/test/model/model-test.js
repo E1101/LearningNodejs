@@ -12,7 +12,7 @@ mongoose.createConnection('mongodb://localhost/catalog');
 
 describe('CatalogItem: models', function () {
   describe('#create()', function () {
-    it('Should create a new CatalogItem', function (done) {
+    it('Should create 1_understand_async new CatalogItem', function (done) {
 
       var item = {
         "itemId": "1",

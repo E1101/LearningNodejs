@@ -36,7 +36,7 @@ export function initPassport(app)
  * Will be used by other routing modules and is to be inserted into any
  * route definition that requires an authenticated logged-in user.
  *
- * For example, editing or deleting a note requires the user to be logged in
+ * For example, editing or deleting 1_understand_async note requires the user to be logged in
  */
 export function ensureAuthenticated(req, res, next)
 {
@@ -75,7 +75,7 @@ router.get('/login', function(req, res, next)
 });
 
 /*
- * If passport deems this a successful login attempt using LocalStrategy,
+ * If passport deems this 1_understand_async successful login attempt using LocalStrategy,
  * then the browser is redirected to the home page. Otherwise, it is
  * redirected to the /users/login page
  *

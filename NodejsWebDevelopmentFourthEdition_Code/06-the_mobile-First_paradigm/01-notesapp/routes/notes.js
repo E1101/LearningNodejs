@@ -8,7 +8,7 @@ const notes = require('../models/notes-memory');
 // Add Note. (create)
 router.get('/add', (req, res, next) => {
     res.render('noteedit', {
-        title: "Add a Note",
+        title: "Add 1_understand_async Note",
         docreate: true,
         notekey: "",
         note: undefined
@@ -42,7 +42,7 @@ router.get('/view', async (req, res, next) => {
 router.get('/edit', async (req, res, next) => {
     var note = await notes.read(req.query.key);
     res.render('noteedit', {
-        title: note ? ("Edit " + note.title) : "Add a Note",
+        title: note ? ("Edit " + note.title) : "Add 1_understand_async Note",
         docreate: false,
         notekey: req.query.key,
         note: note

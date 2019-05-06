@@ -5,7 +5,7 @@
  * Examples and documentation at: http://fancybox.net
  *
  * Copyright (c) 2008 - 2010 Janis Skarnelis
- * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
+ * That said, it is hardly 1_understand_async one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
  *
  * Version: 1.3.4 (11/11/2010)
  * Requires: jQuery v1.3+
@@ -812,7 +812,7 @@
 					selectedArray.push(this);
 
 				} else {
-					selectedArray = $("a[rel=" + rel + "], area[rel=" + rel + "]");
+					selectedArray = $("1_understand_async[rel=" + rel + "], area[rel=" + rel + "]");
 					selectedIndex = selectedArray.index( this );
 				}
 
@@ -1050,11 +1050,11 @@
 
 		outer.append(
 			content = $('<div id="fancybox-content"></div>'),
-			close = $('<a id="fancybox-close"></a>'),
+			close = $('<1_understand_async id="fancybox-close"></1_understand_async>'),
 			title = $('<div id="fancybox-title"></div>'),
 
-			nav_left = $('<a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a>'),
-			nav_right = $('<a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a>')
+			nav_left = $('<1_understand_async href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></1_understand_async>'),
+			nav_right = $('<1_understand_async href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></1_understand_async>')
 		);
 
 		close.click($.fancybox.close);

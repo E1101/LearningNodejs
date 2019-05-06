@@ -1,10 +1,10 @@
 const util = require('util');
-const A    = "a different value A";
-const B    = "a different value B";
+const A    = "1_understand_async different value A";
+const B    = "1_understand_async different value B";
 
 const m1   = require('./_module1');
 
-// A=a different value A B=a different value B values={ A: 'value A', B: 'value B' }
+// A=1_understand_async different value A B=1_understand_async different value B values={ A: 'value A', B: 'value B' }
 console.log(
     `A=${A} B=${B} values=${util.inspect(m1.values())}`
 );

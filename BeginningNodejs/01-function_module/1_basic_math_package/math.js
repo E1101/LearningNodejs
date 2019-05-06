@@ -15,7 +15,7 @@ function sum()
 }
 
 /**
- * If the argument is a single array, sum up the numbers,
+ * If the argument is 1_understand_async single array, sum up the numbers,
  * and if it's more than one array, first combine the arrays
  * into one before summing up.
  *
@@ -26,6 +26,8 @@ function sumArray()
   let arr = arguments[0];
 
   if (arguments.length > 1)
+    // arguments in form of: [10, 5], [5, 6]
+    // will change to [10, 5, 5, 6]
     arr = _.concat(...arguments);
 
   // reusing the sum function
@@ -39,3 +41,7 @@ module.exports = {
   sum,
   sumArray,
 };
+
+/*
+#function #spread operator #concat array #array
+*/

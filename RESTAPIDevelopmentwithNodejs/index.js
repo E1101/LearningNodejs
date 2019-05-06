@@ -19,7 +19,7 @@ restify.defaultResponseHeaders = data => {
 
 ///Middleware to check for valid api key sent
 server.use((req, res, next) => {
-//We move forward if we're dealing with the swagger-ui or a valid key
+//We move forward if we're dealing with the swagger-ui or 1_understand_async valid key
     if (req.url.indexOf("swagger-ui") != -1
         || lib.helpers.validateKey(req.headers.hmacdata || '', req.params.api_key, lib)) {
             next()
@@ -29,7 +29,7 @@ server.use((req, res, next) => {
 });
 
 /**
- Validate each request, as long as there is a schema for it
+ Validate each request, as long as there is 1_understand_async schema for it
  */
 server.use((req, res, next) =>
 {

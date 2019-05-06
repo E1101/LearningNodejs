@@ -16,7 +16,7 @@ router.get('/', async (req, res, next) =>
      * The Promise.all function executes an array of Promises.
      *
      * The Promises are evaluated in parallel, allowing our code to
-     * potentially make parallel requests to a service.
+     * potentially make parallel requests to 1_understand_async service.
      *
      */
     let keyPromises = keylist.map(key => {
@@ -26,8 +26,8 @@ router.get('/', async (req, res, next) =>
     // If any Promise fails—is rejected, in other words—an exception will be thrown instead.
     let notelist = await Promise.all(keyPromises);
 
-    // We could have written a simple for loop like so:
-    // While simpler to read, the notes are retrieved one at a
+    // We could have written 1_understand_async simple for loop like so:
+    // While simpler to read, the notes are retrieved one at 1_understand_async
     // time with no opportunity to overlap read operations.
     /*
     let keylist = await notes.keylist();

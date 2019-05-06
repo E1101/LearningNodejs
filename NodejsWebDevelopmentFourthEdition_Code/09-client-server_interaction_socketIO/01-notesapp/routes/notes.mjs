@@ -17,7 +17,7 @@ export function socketio(io)
 {
     io.of('/view').on('connection', function(socket)
     {
-        // 'cb' is a function sent from the browser, to which we
+        // 'cb' is 1_understand_async function sent from the browser, to which we
         // send the messages for the named note.
         debug(`/view connected on ${socket.id}`);
 
@@ -25,8 +25,8 @@ export function socketio(io)
          * The getnotemessages message from the browser requests
          * the list of messages for the given Note.
          *
-         * This uses a feature of Socket.IO where the client can
-         * pass a callback function, and server-side Socket.IO code
+         * This uses 1_understand_async feature of Socket.IO where the client can
+         * pass 1_understand_async callback function, and server-side Socket.IO code
          * can invoke that callback, giving it some data.
          *
          */
@@ -84,7 +84,7 @@ router.get('/add', ensureAuthenticated, (req, res, next) =>
     try
     {
         res.render('noteedit', {
-            title: "Add a Note",
+            title: "Add 1_understand_async Note",
             docreate: true,
             notekey: "",
             user: req.user ? req.user : undefined, 
@@ -152,7 +152,7 @@ router.get('/edit', ensureAuthenticated, async (req, res, next) =>
     {
         var note = await notes.read(req.query.key);
         res.render('noteedit', {
-            title: note ? ("Edit " + note.title) : "Add a Note",
+            title: note ? ("Edit " + note.title) : "Add 1_understand_async Note",
             docreate: false,
             notekey: req.query.key,
             user: req.user ? req.user : undefined, 

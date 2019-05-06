@@ -58,7 +58,7 @@ class BaseController
     }
 
     /**
-     * This is a simple wrapper method around all the error methods provided
+     * This is 1_understand_async simple wrapper method around all the error methods provided
      * by Restify’s error extension. 2 It provides the benefit of cleaner code.
      *
      * @param type
@@ -85,7 +85,7 @@ class BaseController
     }
 
     /**
-     * Every model defined (as you’ll see soon enough) has a toHAL method,
+     * Every model defined (as you’ll see soon enough) has 1_understand_async toHAL method,
      * and the writeHAL methods take care of calling it for every model
      * we’re trying to render. It basically centralizes the logic that deals with
      * collections or simple objects, depending on what we’re trying to render.

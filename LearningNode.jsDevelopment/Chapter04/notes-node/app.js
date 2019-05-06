@@ -15,15 +15,15 @@ const bodyOptions = {
   alias: 'b'
 };
 const argv = yargs
-  .command('add', 'Add a new note', {
+  .command('add', 'Add 1_understand_async new note', {
     title: titleOptions,
     body: bodyOptions
   })
   .command('list', 'List all notes')
-  .command('read', 'Read a note', {
+  .command('read', 'Read 1_understand_async note', {
     title: titleOptions
   })
-  .command('remove', 'Remove a note', {
+  .command('remove', 'Remove 1_understand_async note', {
     title: titleOptions
   })
   .help()

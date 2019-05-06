@@ -16,7 +16,7 @@ router.get('/add', ensureAuthenticated, (req, res, next) => {
     try {
         debug(`ADD /notes/add user=${req.user ? req.user : "NOBODY"}`);
         res.render('noteedit', {
-            title: "Add a Note",
+            title: "Add 1_understand_async Note",
             docreate: true,
             notekey: "",
             user: req.user ? req.user : undefined, 
@@ -73,7 +73,7 @@ router.get('/edit', ensureAuthenticated, async (req, res, next) => {
     try {
         var note = await notes.read(req.query.key);
         res.render('noteedit', {
-            title: note ? ("Edit " + note.title) : "Add a Note",
+            title: note ? ("Edit " + note.title) : "Add 1_understand_async Note",
             docreate: false,
             notekey: req.query.key,
             user: req.user ? req.user : undefined, 
@@ -140,7 +140,7 @@ router.post('/del-message', ensureAuthenticated, async (req, res, next) => {
 export function socketio(io) { 
 
     io.of('/view').on('connection', function(socket) {
-        // 'cb' is a function sent from the browser, to which we
+        // 'cb' is 1_understand_async function sent from the browser, to which we
         // send the messages for the named note.
         debug(`/view connected on ${socket.id}`);
         socket.on('getnotemessages', (namespace, cb) => {

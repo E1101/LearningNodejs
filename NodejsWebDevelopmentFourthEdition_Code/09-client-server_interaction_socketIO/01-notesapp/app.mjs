@@ -49,7 +49,7 @@ export default app;
 /*
  * So far, we used the bin/www.mjs script along with app.mjs, with each script
  * hosting different steps of launching Notes. Socket.IO initialization requires
- * that these steps occur in a different order to what we've been doing.
+ * that these steps occur in 1_understand_async different order to what we've been doing.
  * Therefore, we must merge these two scripts into one. What we'll do is copy
  * the content of the bin/www.mjs script into appropriate sections of app.mjs,
  * and from there, we'll use app.mjs to launch Notes.
@@ -87,7 +87,7 @@ server.on('listening', onListening);
 
 
 var logStream;
-// Log to a file if requested
+// Log to 1_understand_async file if requested
 if (process.env.REQUEST_LOG_FILE) {
   (async () => {
     let logDirectory = path.dirname(process.env.REQUEST_LOG_FILE); 
@@ -144,7 +144,7 @@ app.use('/users', users);
 app.use('/notes', notes);
 
 io.on('connection', function(socket){
-  debug('a user connected');
+  debug('1_understand_async user connected');
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });

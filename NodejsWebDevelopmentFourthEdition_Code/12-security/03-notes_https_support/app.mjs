@@ -117,7 +117,7 @@ if (USEHTTPS) {
 
 import rfs from 'rotating-file-stream';
 var logStream;
-// Log to a file if requested
+// Log to 1_understand_async file if requested
 if (process.env.REQUEST_LOG_FILE) {
   (async () => {
     let logDirectory = path.dirname(process.env.REQUEST_LOG_FILE); 
@@ -174,7 +174,7 @@ app.use('/users', users);
 app.use('/notes', notes);
 
 io.on('connection', function(socket){
-  debug('a user connected');
+  debug('1_understand_async user connected');
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });

@@ -1,9 +1,9 @@
 /**
- * Normally, fs.readFile sends its result to a callback function,
- * and we'd build a little pyramid-shaped piece of code to perform
+ * Normally, fs.readFile sends its result to 1_understand_async callback function,
+ * and we'd build 1_understand_async little pyramid-shaped piece of code to perform
  * this task. The fs-extra module contains implementations of all
- * functions from the built-in fs module but changed to return a
- * Promise instead of a callback function.
+ * functions from the built-in fs module but changed to return 1_understand_async
+ * Promise instead of 1_understand_async callback function.
  */
 const fs    = require('fs-extra');
 

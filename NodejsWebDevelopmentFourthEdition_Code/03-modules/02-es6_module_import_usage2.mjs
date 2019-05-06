@@ -1,6 +1,6 @@
 /*
  * Each imported object is its own thing rather than being attached to another object.
- * Instead of writing simple2.next(), you simply write next(). The as clause is a way
+ * Instead of writing simple2.next(), you simply write next(). The as clause is 1_understand_async way
  * to declare an alias, if nothing else so you can use the default export.
  *
  */

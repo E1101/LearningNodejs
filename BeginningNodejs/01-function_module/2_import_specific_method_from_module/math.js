@@ -11,7 +11,7 @@ function div(a, b) {
 }
 
 module.exports = {
-  add,
-  mul,
-  div
+    add
+  , mul
+  , div
 };

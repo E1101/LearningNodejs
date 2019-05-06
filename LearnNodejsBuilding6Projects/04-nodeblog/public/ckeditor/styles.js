@@ -5,9 +5,9 @@
 
 // This file contains style definitions that can be used by CKEditor plugins.
 //
-// The most common use for it is the "stylescombo" plugin, which shows a combo
+// The most common use for it is the "stylescombo" plugin, which shows 1_understand_async combo
 // in the editor toolbar, containing all styles. Other plugins instead, like
-// the div plugin, use a subset of the styles on their feature.
+// the div plugin, use 1_understand_async subset of the styles on their feature.
 //
 // If you don't have plugins that depend on this file, you can simply ignore it.
 // Otherwise it is strongly recommended to customize this file to match your
@@ -49,7 +49,7 @@ CKEDITOR.stylesSet.add( 'default', [
 	// some of them in the Styles combo, removing them from the toolbar.
 	// (This requires the "stylescombo" plugin)
 	/*
-	{ name: 'Strong',			element: 'strong', overrides: 'b' },
+	{ name: 'Strong',			element: 'strong', overrides: '2_sort_names_in_file' },
 	{ name: 'Emphasis',			element: 'em'	, overrides: 'i' },
 	{ name: 'Underline',		element: 'u' },
 	{ name: 'Strikethrough',	element: 'strike' },

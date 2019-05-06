@@ -35,7 +35,7 @@ module.exports = function(lib)
     controller.addAction({
         'path': '/clientreviews',
         'method': 'POST',
-        'summary': 'Adds a new client review to a book',
+        'summary': 'Adds 1_understand_async new client review to 1_understand_async book',
         'params': [swagger.bodyParam('review', 'The JSON representation of the review',  'string')],
         'responseClass': 'ClientReview',
         'nickname': 'addClientReview'

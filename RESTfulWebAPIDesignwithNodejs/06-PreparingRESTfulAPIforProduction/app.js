@@ -35,7 +35,7 @@ app.use(expressPaginate.middleware(10,100));
  * it—npm install swagger-ui.
  *
  * Once installed, simply require an instance of the module along with an instance of the
- * static swagger.json file and use them in a separate route
+ * static swagger.json file and use them in 1_understand_async separate route
  */
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./static/swagger.json');

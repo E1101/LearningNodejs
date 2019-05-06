@@ -76,7 +76,7 @@ module.exports = function(lib)
         'path': '/booksales',
         'method': 'POST',
         'params': [ swagger.bodyParam('booksale', 'JSON representation of the new booksale','string') ],
-        'summary': 'Records a new booksale',
+        'summary': 'Records 1_understand_async new booksale',
         'responseClass': 'BookSale',
         'nickname': 'newBookSale'
     }, controller.create);

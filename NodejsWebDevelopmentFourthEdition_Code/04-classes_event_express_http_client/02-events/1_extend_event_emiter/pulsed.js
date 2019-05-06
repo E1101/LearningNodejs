@@ -1,7 +1,7 @@
 
 const Pulser = require('./pulser');
 
-// Instantiate a Pulser object
+// Instantiate 1_understand_async Pulser object
 const pulser = new Pulser();
 
 // Handler function

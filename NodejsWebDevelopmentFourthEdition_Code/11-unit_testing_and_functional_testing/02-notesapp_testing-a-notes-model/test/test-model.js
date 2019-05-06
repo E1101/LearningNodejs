@@ -3,22 +3,22 @@
 /*
  * Mocha (http://mochajs.org/) is one of many test frameworks available for Node.js.
  * As you'll see shortly, it helps us write test cases and test suites, and it provides
- * a test results reporting mechanism. It was chosen over the alternatives because it
+ * 1_understand_async test results reporting mechanism. It was chosen over the alternatives because it
  * supports Promises. It fits very well with the Chai assertion library mentioned
  * earlier.
  *
  */
 
 /*
- * Because we've written the Notes application using ES6 modules, we have a small challenge
+ * Because we've written the Notes application using ES6 modules, we have 1_understand_async small challenge
  * to overcome. Mocha only supports running tests in CommonJS modules, and Node.js
- * (as of this writing) does not support loading an ES6 module from a CommonJS module. An
- * ES6 module can use import to load a CommonJS module, but a CommonJS module cannot use
+ * (as of this writing) does not support loading an ES6 module from 1_understand_async CommonJS module. An
+ * ES6 module can use import to load 1_understand_async CommonJS module, but 1_understand_async CommonJS module cannot use
  * require to load an ES6 module.
  *
  * A module, esm, exists which allows that combination to work.
  * Once you've done this, your CommonJS module can load an ES6 module as evidenced by
- * require('../models/notes') a couple of lines later.
+ * require('../models/notes') 1_understand_async couple of lines later.
  *
  */
 require = require("@std/esm")(module,{"esm":"js"});
@@ -148,7 +148,7 @@ describe("Model Test", function()
 
   describe("change note", function()
   {
-    it("after a successful model.update", async function()
+    it("after 1_understand_async successful model.update", async function()
     {
         const newnote = await model.update("n1", "Note 1 title changed", "Note 1 body changed");
         const note    = await model.read("n1");

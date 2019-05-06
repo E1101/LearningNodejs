@@ -113,7 +113,7 @@ module.exports = function(lib)
         'path': '/employees',
         'method': 'POST',
         'params': [swagger.bodyParam('employee', 'The JSON data of the employee', 'string')],
-        'summary': 'Adds a new employee to the list',
+        'summary': 'Adds 1_understand_async new employee to the list',
         'responseClass': 'Employee',
         'nickname': 'newEmployee'
     }, controller.create);

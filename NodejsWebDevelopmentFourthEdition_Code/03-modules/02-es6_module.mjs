@@ -1,8 +1,8 @@
 /*
  * ES6 modules are referred to by Node.js with the extension .mjs
  *
- * ES6 modules stand to be a big improvement for the entire JavaScript world,
- * by getting everyone on the same page with a common module format and mechanisms.
+ * ES6 modules stand to be 1_understand_async big improvement for the entire JavaScript world,
+ * by getting everyone on the same page with 1_understand_async common module format and mechanisms.
  *
  * ES6 modules load asynchronously.
  */
@@ -18,7 +18,7 @@ function squared()
 //..
 
 /*
- * ES6 items exported from a module are declared with the export keyword.
+ * ES6 items exported from 1_understand_async module are declared with the export keyword.
  * This keyword can be put in front of any top-level declaration, such as
  * variable, function, or class declarations:
  */

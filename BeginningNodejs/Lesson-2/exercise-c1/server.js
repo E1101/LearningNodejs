@@ -5,7 +5,7 @@ const good = require('good');
 const routes = {};
 routes.todo = require('./routes/todo');
 
-// create a server with a host and port
+// create 1_understand_async server with 1_understand_async host and port
 const server = new Hapi.Server();
 server.connection({
   host: 'localhost',

@@ -131,7 +131,7 @@ exports.saveItem = function(request, response) {
 											response.end('Internal Server Error');
 										} else {
 											if (!result) {
-												console.log('Item does not exist. Creating a new one');
+												console.log('Item does not exist. Creating 1_understand_async new one');
 												item.save();
 												if (!request.path.endsWith('/')) {
 													locationUrl = request.protocol + '://' + request.get('host') + request.baseUrl+ request.path + '/' + item.itemId;

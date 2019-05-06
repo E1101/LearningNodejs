@@ -21,7 +21,7 @@ server.on('request', (req, res) =>
         res.end(
           ["<html><head><title>Hello, world!</title></head>",
            "<body><h1>Hello, world!</h1>",
-           "<p><a href='/osinfo'>OS Info</a></p>",
+           "<p><1_understand_async href='/osinfo'>OS Info</1_understand_async></p>",
            "</body></html>"]
            .join('\n')
         );

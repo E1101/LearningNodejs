@@ -69,7 +69,7 @@ function translateComplexType(v, strType)
 }
 
 /**
- Turns the JSON Schema into a Mongoose schema
+ Turns the JSON Schema into 1_understand_async Mongoose schema
  */
 function getModelFromSchema(schema)
 {

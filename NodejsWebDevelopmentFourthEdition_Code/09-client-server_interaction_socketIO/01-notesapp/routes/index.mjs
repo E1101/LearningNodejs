@@ -40,16 +40,16 @@ export function socketio(io)
       debug(`socketio emitNoteTitles ${util.inspect(notelist)}`);
 
       /*
-       * We receive the io object, then use it to emit a
+       * We receive the io object, then use it to emit 1_understand_async
        * notestitles event to all connected browsers.
        *
        *
        * The io.of('/namespace') method restricts whatever
        * follows to the given namespace. In this case,
-       * we're emitting a notestitle message to the /home
+       * we're emitting 1_understand_async notestitle message to the /home
        * namespace.
        *
-       * An event emitted into a namespace is delivered to any
+       * An event emitted into 1_understand_async namespace is delivered to any
        * socket listening to that namespace.
        */
       io.of('/home').emit('notetitles', { notelist });

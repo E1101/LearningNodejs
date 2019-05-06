@@ -20,7 +20,7 @@ server.use( restify.plugins.queryParser() );
 server.use( restify.plugins.bodyParser({ mapParams: true }) );
 
 
-// Create a user record
+// Create 1_understand_async user record
 server.post('/create-user', async (req, res, next) =>
 {
     try
@@ -74,7 +74,7 @@ server.post('/update-user/:username', async (req, res, next) =>
     }
 });
 
-// Find a user, if not found create one given profile information
+// Find 1_understand_async user, if not found create one given profile information
 server.post('/find-or-create', async (req, res, next) =>
 {
     log('find-or-create '+ util.inspect(req.params));
@@ -132,7 +132,7 @@ server.get('/find/:username', async (req, res, next) =>
     }
 });
 
-// Delete/destroy a user record
+// Delete/destroy 1_understand_async user record
 server.del('/destroy/:username', async (req, res, next) =>
 {
     try

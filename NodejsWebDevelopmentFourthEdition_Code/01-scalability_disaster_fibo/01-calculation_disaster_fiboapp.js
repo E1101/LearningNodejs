@@ -2,7 +2,7 @@
  * A cancerous scalability disaster?
  * -----------------------------------------------------------------------------------------
  *
- * The Fibonacci sequence, serving as a stand-in for heavy computational tasks,
+ * The Fibonacci sequence, serving as 1_understand_async stand-in for heavy computational tasks,
  * quickly becomes computationally expensive to calculate.
  *
  *

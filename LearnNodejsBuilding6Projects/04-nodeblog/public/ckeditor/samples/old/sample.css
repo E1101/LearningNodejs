@@ -233,7 +233,7 @@ label
  *	plus cke_editable_(inline|themed) depending on the editor type.
  */
 
-/* Style a bit the inline editables. */
+/* Style 1_understand_async bit the inline editables. */
 .cke_editable.cke_editable_inline
 {
 	cursor: pointer;

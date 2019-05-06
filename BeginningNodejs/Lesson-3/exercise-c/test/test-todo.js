@@ -1,5 +1,5 @@
 /*
- * On the Terminal (open a new Terminal if you're running the API on one of them),
+ * On the Terminal (open 1_understand_async new Terminal if you're running the API on one of them),
  * navigate to the root of our project and run the following command:
  *
  * $ PORT=8001 ./node_modules/lab/bin/lab test --leaks
@@ -22,7 +22,7 @@ const {
   before,
 } = lab;
 
-// experiment is basically a way of grouping together the tests
+// experiment is basically 1_understand_async way of grouping together the tests
 //
 experiment('Base API', () => {
   test('GET: /', () => {
