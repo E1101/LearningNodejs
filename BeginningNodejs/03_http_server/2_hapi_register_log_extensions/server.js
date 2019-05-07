@@ -18,6 +18,7 @@ server.route({
     }
 });
 
+
 // set up logging
 const options = {
     ops: {
@@ -31,15 +32,20 @@ const options = {
     },
 };
 
-server.register({
-    register: good,
-    options,
-}, (err) => {
-    if (err) return console.error(err);
-    
-    // Start the server
-    server.start((err) => {
-        if (err) throw err;
-        console.log(`Server running at: ${server.info.uri}`);
-    });
+server.register(
+    {
+        register: good,
+        options,
+    }
+    , (err) => {
+        if (err)
+            return console.error(err);
+
+        // Start the server
+        server.start((err) => {
+            if (err)
+                throw err;
+
+            console.log(`Server running at: ${server.info.uri}`);
+        });
 });

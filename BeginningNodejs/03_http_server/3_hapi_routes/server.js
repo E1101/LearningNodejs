@@ -1,16 +1,17 @@
 const Hapi = require('hapi');
 const good = require('good');
 
-// routes
-const routes = {};
-routes.todo = require('./routes/todo');
 
-// create 1_understand_async server with 1_understand_async host and port
 const server = new Hapi.Server();
 server.connection({
   host: 'localhost',
   port: process.argv[2] || 8000,
 });
+
+
+// routes
+const routes = {};
+routes.todo = require('./routes/todo');
 
 // Add the route
 server.route({
@@ -23,6 +24,7 @@ server.route({
 
 // load other routes
 server.route(routes.todo);
+
 
 // set up logging
 const options = {

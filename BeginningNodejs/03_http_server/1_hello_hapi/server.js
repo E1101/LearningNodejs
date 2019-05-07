@@ -1,6 +1,6 @@
 const Hapi  = require('hapi');
 
-// create 1_understand_async server with 1_understand_async host and port
+
 const server = new Hapi.Server();
 
 server.connection({
@@ -13,12 +13,20 @@ server.route({
     method: 'GET',
     path: '/',
     handler: (request, reply) => {
-        return reply('hello, world');
+        // we can reply by simple string
+        // reply('hello, world');
+
+        // or response json
+        return reply({ message: 'hello, world' });
     }
 });
 
 // Start the server
 server.start((err) => {
-    if (err) throw err;
+    if (err)
+        throw err;
+
+    // we have access to some server information like:
+    // - host, port, created at, started at.
     console.log(`Server running at: ${server.info.uri}`);
 });
