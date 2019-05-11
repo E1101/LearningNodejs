@@ -1,5 +1,5 @@
 /*
- * On the Terminal (open 1_understand_async new Terminal if you're running the API on one of them),
+ * On the Terminal (open new Terminal if you're running the API on one of them),
  * navigate to the root of our project and run the following command:
  *
  * $ PORT=8001 ./node_modules/lab/bin/lab test --leaks
@@ -16,13 +16,14 @@ const lab = exports.lab = Lab.script();
 // get our server(API)
 const server = require('../server');
 
+// destruct methods from lab object
 const {
   experiment,
   test,
   before,
 } = lab;
 
-// experiment is basically 1_understand_async way of grouping together the tests
+// experiment is basically way of grouping together the tests
 //
 experiment('Base API', () => {
   test('GET: /', () => {

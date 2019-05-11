@@ -29,8 +29,11 @@ module.exports = {
           expiresIn: '120d',
         }
       );
+
       return reply({ token: token, uid: user.uid });
     }
+
+
     return reply({ message: 'incorrect password' }).code(400);
   },
   config: {

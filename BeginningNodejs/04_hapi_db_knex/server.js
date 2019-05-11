@@ -3,9 +3,8 @@ const good = require('good');
 
 // routes
 const routes = {};
-routes.todo = require('./routes/todo');
+routes.todo  = require('./routes/todo');
 
-// create 1_understand_async server with 1_understand_async host and port
 const server = new Hapi.Server();
 server.connection({
   host: 'localhost',
@@ -41,11 +40,14 @@ server.register({
   register: good,
   options,
 }, (err) => {
-  if (err) return console.error(err);
+  if (err)
+    return console.error(err);
 
   // Start the server
   server.start((err) => {
-    if (err) throw err;
+    if (err)
+      throw err;
+
     console.log(`Server running at: ${server.info.uri}`);
   });
 });

@@ -1,18 +1,19 @@
-const Hapi = require('hapi');
-const good = require('good');
+const Hapi        = require('hapi');
+const good        = require('good');
 const hapiAuthJwt = require('hapi-auth-jwt');
 
 // routes
 const routes = {};
-routes.todo = require('./routes/todo');
-routes.auth = require('./routes/auth');
+routes.todo  = require('./routes/todo');
+routes.auth  = require('./routes/auth');
 
-// create 1_understand_async server with 1_understand_async host and port
+
 const server = new Hapi.Server();
 server.connection({
   host: 'localhost',
   port: process.env.PORT || 8000,
   routes: {
+    // enable cross origin access control
     cors: true,
   }
 });
@@ -40,15 +41,19 @@ server.register(hapiAuthJwt, (err) => {
   // add auth config on all routes
   const authRoutes = routes.todo.map(route => {
     const authConfig = { strategy: 'token' };
+
     if (route.config) {
       route.config.auth = authConfig;
+
     } else {
       route.config = {
         auth: authConfig,
       };
     }
+
     return route;
   });
+
   server.route(authRoutes);
 });
 
@@ -69,11 +74,14 @@ server.register({
   register: good,
   options,
 }, (err) => {
-  if (err) return console.error(err);
+  if (err)
+    return console.error(err);
 
   // Start the server
   server.start((err) => {
-    if (err) throw err;
+    if (err)
+      throw err;
+
     console.log(`Server running at: ${server.info.uri}`);
   });
 });
