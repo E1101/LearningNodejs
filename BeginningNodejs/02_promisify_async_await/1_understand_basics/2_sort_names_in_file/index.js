@@ -6,8 +6,7 @@ const util = require('util');
 async function transformFile(inFile, outFile)
 {
   // promisify is added to util on nodejs > 8
-  // It converts 1_understand_async callback-based function to 1_understand_async
-  // Promise-based one.
+  // It converts callback-based function to async Promise-based one.
   const readFile  = util.promisify( fs.readFile );
   const writeFile = util.promisify( fs.writeFile );
 

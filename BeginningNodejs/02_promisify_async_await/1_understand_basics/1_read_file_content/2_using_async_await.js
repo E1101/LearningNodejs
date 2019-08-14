@@ -7,7 +7,7 @@ const filePath = process.argv[2];
 
 
 // The functions need not to be chained one after another, simply await the function that returns the Promise.
-// But the function async needs to be declared before awaiting 1_understand_async function returning 1_understand_async Promise.
+// But the function async needs to be declared before awaiting function returning Promise.
 async function main() {
     try {
         // asks the javascript engine running the code to wait for the function to

@@ -7,7 +7,7 @@ function add(a, b)
 
 function sum()
 {
-  let numbers = Array.from(arguments);
+  let numbers = Array.from(arguments); // arguments: { '0': 10, '1': 5, '2': 6 }
 
   let sum = 0;
   numbers.forEach(num => sum += num);
@@ -15,7 +15,7 @@ function sum()
 }
 
 /**
- * If the argument is 1_understand_async single array, sum up the numbers,
+ * If the argument is single array, sum up the numbers,
  * and if it's more than one array, first combine the arrays
  * into one before summing up.
  *
@@ -43,5 +43,5 @@ module.exports = {
 };
 
 /*
-#function #spread operator #concat array #array
+#function #(spread operator) #(concat array) #array
 */

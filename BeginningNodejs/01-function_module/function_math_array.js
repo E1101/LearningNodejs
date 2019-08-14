@@ -34,5 +34,5 @@ console.log( sum(10, 4.5, 6) );     // 20.5
 
 
 /*
-#function #function arguments #Array #sprintf #throw #Error
+#function #(function arguments) #Array #sprintf #throw #Error
 */
