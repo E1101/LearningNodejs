@@ -5,6 +5,8 @@ function add(a, b)
   return a + b;
 }
 
+// we can in replacement use sum(...num) to have
+// array [0, 1, 2, 3] as arguments.
 function sum()
 {
   let numbers = Array.from(arguments); // arguments: { '0': 10, '1': 5, '2': 6 }
