@@ -14,7 +14,7 @@ function sum()
   // here we transform that object into array, the result is:
   // [10, 5, 6]
   // because as i mentioned the arguments is Array-like it means that it
-  // dosen't contains .forEach() or map()
+  // does'nt contains .forEach() or map()
   let numbers = Array.from(arguments);
 
   let sum = 0;
@@ -31,8 +31,3 @@ function sum()
 // testing
 console.log( add(10, 6) );    // 16
 console.log( sum(10, 4.5, 6) );     // 20.5
-
-
-/*
-#function #(function arguments) #Array #sprintf #throw #Error
-*/

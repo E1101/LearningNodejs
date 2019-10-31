@@ -2,13 +2,15 @@ version: "2"
 
 services:
   node:
-    image: "node:8.14-alpine"
+    image: "node:12.13.0-alpine"
     user: "node"
     working_dir: /home/node/app
     environment:
       - NODE_ENV=production
     volumes:
       - ./:/home/node/app
-    command: "node task.js"
+    command: "/bin/sh -c \"while true; do sleep 3; done\""
 
+## docker-compose up -d
+## docker-compose exec node /bin/sh
 ## docker-compose run node node task.js
