@@ -1,11 +1,10 @@
 function getUserSync(userId) {
     let user;
     let rnd = random(100, 1000);
-    user = 'User ID: ' + rnd;
+    user = 'User ID: ' + userId;
 
-    async () => {
-        await sleep(rnd);
-    };
+    sleep(rnd);
+    console.log('Took ' + rnd + 'to fetch.');
 
     return user;
 }
@@ -14,8 +13,8 @@ function random(low, high) {
     return Math.random() * (high - low) + low
 }
 
-function sleep(ms){
-    return new Promise(resolve => {
+async function sleep(ms){
+    await new Promise(resolve => {
         setTimeout(resolve, ms)
     })
 }

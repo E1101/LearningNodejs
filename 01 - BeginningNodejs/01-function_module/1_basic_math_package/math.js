@@ -43,7 +43,3 @@ module.exports = {
   sum,
   sumArray,
 };
-
-/*
-#function #(spread operator) #(concat array) #array
-*/
