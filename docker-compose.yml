@@ -5,6 +5,8 @@ services:
     image: "node:12.13.0-alpine"
     user: "node"
     working_dir: /home/node/app
+    ports:
+      - "3000:3000"
     environment:
       - NODE_ENV=production
     volumes:
