@@ -19,12 +19,12 @@ VOLUME /webroots
 VOLUME /etc/letsencrypt
 
 # This installs 1_understand_async Crontab entry which
-# runs "certbot renew" on the 2nd and 7th day of each week at 03:22 AM
+# runs "certbot renew" on the 2nd and 7th day of each week at 03-health_check-session_sharing-persistence_with_JWTs-relationships-reading_query_parameters:22 AM
 #
 # cron(8) says the Debian cron daemon reads the files in /etc/cron.d, 
 # merging into the data from /etc/crontab, to use as the system-wide cron jobs
 #
-# RUN echo "22 03 * * 2,7 root /scripts/certbot-auto renew" >/etc/cron.d/certbot
+# RUN echo "22 03-health_check-session_sharing-persistence_with_JWTs-relationships-reading_query_parameters * * 2,7 root /scripts/certbot-auto renew" >/etc/cron.d/certbot
 
 RUN echo "* * * * * root echo 'hello, world' >>/tmp/hello.txt" >/etc/cron.d/certbot
 

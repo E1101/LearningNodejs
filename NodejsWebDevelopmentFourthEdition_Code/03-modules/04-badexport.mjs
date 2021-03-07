@@ -3,7 +3,7 @@
  * and export statements must be top-level code.
  *
  * Results in an error:
- * $ node --experimental-modules 04-badexport.mjs
+ * $ node --experimental-modules 04-adding_users-product_filtering-badexport.mjs
  */
 {
     export const meaning = 42;
